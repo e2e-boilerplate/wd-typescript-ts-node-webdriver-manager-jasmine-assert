@@ -1,0 +1,62 @@
+{
+  "author": "Girma Nigusse <xgirma@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/e2e-boilerplate/wd-typescript-ts-node-webdriver-manager-jasmine-expect/issues"
+  },
+  "dependencies": {
+    "chai-as-promised": "7.1.1",
+    "jasmine": "3.5.0",
+    "ts-node": "8.8.2",
+    "typescript": "3.8.3",
+    "wd": "1.12.1",
+    "webdriver-manager": "12.1.7"
+  },
+  "description": "WD end-to-end test automation boilerplate. Using TypeScript, ts-node, Webdriver-Manager, Jasmine and Expect.",
+  "devDependencies": {
+    "@types/jasmine": "3.5.10",
+    "@types/node": "13.11.1",
+    "husky": "4.2.5",
+    "lint-staged": "10.1.3",
+    "prettier": "2.0.4",
+    "tslint": "6.1.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-plugin-prettier": "2.3.0"
+  },
+  "homepage": "https://github.com/e2e-boilerplate/wd-typescript-ts-node-webdriver-manager-jasmine-expect#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "keywords": [
+    "boilerplate",
+    "e2e",
+    "e2e tests",
+    "example",
+    "expect",
+    "integration test",
+    "jasmine",
+    "ts-node",
+    "typescript",
+    "wd",
+    "webdriver manager"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "name": "wd-typescript-ts-node-webdriver-manager-jasmine-expect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplate/wd-typescript-ts-node-webdriver-manager-jasmine-expect.git"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json 'spec/*.ts'",
+    "start:webdriver": "npx webdriver-manager start --versions.chrome 80.0.3987.106",
+    "test": "npx jasmine",
+    "update:webdriver": "npx webdriver-manager update --gecko false --versions.chrome 80.0.3987.106"
+  },
+  "version": "1.0.0"
+}
