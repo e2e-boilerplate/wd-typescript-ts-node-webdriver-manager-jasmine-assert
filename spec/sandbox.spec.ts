@@ -10,7 +10,7 @@ describe("Sandbox", () => {
   beforeEach(function fn() {
     browser = wd.promiseChainRemote();
     return config(url, browser);
-  });
+  }, 20000);
 
   afterEach(() => {
     return browser.quit();
