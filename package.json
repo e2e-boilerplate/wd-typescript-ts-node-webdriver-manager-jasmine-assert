@@ -14,7 +14,7 @@
   "description": "WD end-to-end test automation boilerplate. Using TypeScript, ts-node, Webdriver-Manager, Jasmine and Assert.",
   "devDependencies": {
     "@types/jasmine": "3.5.10",
-    "@types/node": "13.13.8",
+    "@types/node": "13.13.9",
     "husky": "4.2.5",
     "lint-staged": "10.2.4",
     "prettier": "2.0.4",
